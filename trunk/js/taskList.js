@@ -11,7 +11,6 @@ jQuery(document).ready(function(){
 */
 var getTask = function(){
 	var historical = jQuery("#completed").val();
-	console.log(historical);
 	jQuery.ajax({
 		type: "POST",
 			data: {'completed_task' : historical},
