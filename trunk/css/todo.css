@@ -1,0 +1,31 @@
+#content_wrapper{
+	border-style: double;
+	border-width: 2px;
+	padding:15px;
+	width:700px;
+	-webkit-border-radius: 42px;
+	-moz-border-radius: 42px;
+	border-radius: 42px;
+	background-color:white;
+}
+
+#title{
+	padding-left:10px;
+	color:black;
+	text-decoration: underline;
+	text-decoration-color: red;
+    -moz-text-decoration-color: red; /* Code for Firefox */
+}
+
+#logo{
+	height: 35px;
+	width: 35px;
+	padding-right:5px;
+}
+
+select, input{
+	-webkit-border-radius: 42px;
+	-moz-border-radius: 42px;
+	border-radius: 42px;
+	padding:5px;
+}

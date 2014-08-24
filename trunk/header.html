@@ -1,0 +1,19 @@
+<?php 
+	session_start();
+	$exceptions = array("login", "register");
+	if((!isset($_SESSION)) && (!in_array($_GET['page'], $exceptions))){
+		header("Location: /ez-todo/?page=login");
+	}
+?>
+<html>
+	<head>
+		<title>EZ-TODO</title>
+		<script src="./js/jquery-1.11.1.min.js"></script>
+		<script src="./ckeditor/ckeditor.js"></script>
+		<script src="./js/todo.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/todo.css">
+	</head>
+	<body>
+		<meta name="description" content="Easy todo list appication" />
+		<meta name="author" content="Joseph Fehrman" />
+		<h1 id="title"><img id="logo" src="./images/arc_reactor.png" />EZ-TODO</h1>
