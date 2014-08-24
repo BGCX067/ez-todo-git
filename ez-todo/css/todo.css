@@ -2,7 +2,7 @@
 	border-style: double;
 	border-width: 2px;
 	padding:15px;
-	width:700px;
+	width:60%;
 	-webkit-border-radius: 42px;
 	-moz-border-radius: 42px;
 	border-radius: 42px;
@@ -28,4 +28,14 @@ select, input{
 	-moz-border-radius: 42px;
 	border-radius: 42px;
 	padding:5px;
+}
+
+#task_table ,#task_table td, #task_table th{
+	border-style: solid;
+	border-width:1px;
+	border-color:black;
+}
+
+#task_table .description{
+	width: 500px;
 }
