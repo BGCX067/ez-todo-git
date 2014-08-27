@@ -26,4 +26,11 @@ jQuery(document).ready(function(){
 			}
 		});
 	});
+	
+	/*
+		Applies an onclick to the register page.
+	*/
+	jQuery("#register_button").click(function(){
+		window.location="./?page=register";
+	});
 });

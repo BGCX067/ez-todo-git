@@ -31,7 +31,7 @@
 		$results = mysqli_query($conn, $sqlGetDifficultyID) OR die("Error on query: " . $sqlGetDifficultyID);
 		$row = mysqli_fetch_array($results);
 		$diffID = $row['ID'];
-		if($dueDate == ""){
+		if($dueDate == "" || $dueDate == null){
 			// ensures null value if no due date set.
 			$dueDate = null;
 		}else{

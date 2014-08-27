@@ -50,7 +50,6 @@
 		$_SESSION['last_name'] = $ln;
 		$_SESSION['username'] = $user;
 		$_SESSION['email'] = $email;
-		echo implode(", ", $_SESSION);
-		//echo "success";
+		echo "success";
 	}
 ?>

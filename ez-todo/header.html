@@ -1,7 +1,7 @@
 <?php 
 	session_start();
 	$exceptions = array("login", "register");
-	if((!isset($_SESSION)) && (!in_array($_GET['page'], $exceptions))){
+	if((!isset($_SESSION['username'])) && (!in_array($_GET['page'], $exceptions))){
 		header("Location: /ez-todo/?page=login");
 	}
 ?>

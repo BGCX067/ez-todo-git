@@ -28,8 +28,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `todo_user` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `First Name` varchar(150) NOT NULL,
-  `Last Name` varchar(150) DEFAULT NULL,
+  `First_Name` varchar(150) NOT NULL,
+  `Last_Name` varchar(150) DEFAULT NULL,
   `Username` varchar(30) NOT NULL,
   `Password` varchar(200) NOT NULL,
   `Parent_Username` varchar(30) DEFAULT NULL,
