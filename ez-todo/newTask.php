@@ -19,5 +19,4 @@
 		<tr><td>Due Date:</td><td><input name="due_date" id="due_date" /></td></tr>
 		<tr><td colspan="2"><center><input id="create_button" type="submit" value="Create" /></center></td></tr>
 	</table>
-	<a href="./?page=taskList"><== Back to task list</a>
 </form>

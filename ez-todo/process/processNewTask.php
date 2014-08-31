@@ -33,12 +33,12 @@
 		$diffID = $row['ID'];
 		if($dueDate == "" || $dueDate == null){
 			// ensures null value if no due date set.
-			$dueDate = null;
+			$finalDate = 'NULL';
 		}else{
 			// formats date
-			$finalDate = date("Y-m-d H:i:s",strtotime($dueDate));
+			$finalDate = "'" . date("Y-m-d H:i:s",strtotime($dueDate)) . "'";
 		}
-		$SQL = "INSERT INTO todo_task (username, task_name, description, difficulty_id, due_date, assigned_date, status) VALUES ('$username', '$taskName', '$description', '$diffID', '$finalDate', now(), 'active')";
+		$SQL = "INSERT INTO todo_task (username, task_name, description, difficulty_id, due_date, assigned_date, status) VALUES ('$username', '$taskName', '$description', '$diffID', $finalDate, now(), 'active')";
 		mysqli_query($conn, $SQL) OR die("Error on query: " . $SQL . mysql_error());
 		header('Location : ./?page=taskList');
 		//Ensures page redirect

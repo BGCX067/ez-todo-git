@@ -39,3 +39,35 @@ select, input{
 #task_table .description{
 	width: 500px;
 }
+
+#menu li{
+	display: inline;
+}
+
+#menu li a{
+	border: 2px solid black;
+	-webkit-border-radius: 42px;
+	-moz-border-radius: 42px;
+	border-radius: 42px;
+	text-decoration: none;
+	padding: .2em 1em;
+	color: black;
+	background-color: white;
+}
+
+#menu li a:hover{
+	color: white;
+	background-color: grey;
+}
+
+ul#menu{
+	text-align:center;
+	width:61%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border: 2px solid black;
+	-webkit-border-radius: 42px;
+	-moz-border-radius: 42px;
+	border-radius: 42px;
+ }

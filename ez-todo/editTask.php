@@ -35,7 +35,7 @@
 		<tr><td>Difficulty:</td><td><p><?php echo $difficulty; ?></p></td></tr>
 		<tr><td>Status:</td><td><p><?php echo  $status; ?></p></td></tr>
 		<tr><td>Assigned:</td><td><p><?php echo $assigned_date; ?></p></td></tr>
-		<tr><td>Due Date:</td><td><p><?php echo $due_date; ?></p></td></tr>
+		<tr><td>Due Date:</td><td><p><input type="text" id="due_date" name ="due_date" value="<?php echo $due_date; ?>" /></p></td></tr>
 		<tr><td>Finished:</td><td><p><?php echo $finished_date; ?></p></td></tr>
 		<tr><td>Commit:</td><td><input type="text" id="commit" name="commit" value="<?php echo $commit; ?>" /></td></tr>
 		<tr><td colspan="2"><center>
@@ -43,5 +43,4 @@
 			<input id="resolve_button" type="button" value="Finish It!" />
 		</center></td></tr>
 	</table>
-	<a href="./?page=taskList"><== Back to task list</a>
 </form>

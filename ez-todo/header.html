@@ -4,6 +4,9 @@
 	if((!isset($_SESSION['username'])) && (!in_array($_GET['page'], $exceptions))){
 		header("Location: /ez-todo/?page=login");
 	}
+	if(!isset($_GET['page'])){
+		header("Location: /ez-todo/?page=taskList");
+	}
 ?>
 <html>
 	<head>
@@ -17,3 +20,10 @@
 		<meta name="description" content="Easy todo list appication" />
 		<meta name="author" content="Joseph Fehrman" />
 		<h1 id="title"><img id="logo" src="./images/arc_reactor.png" />EZ-TODO</h1>
+		<ul id="menu">
+			<li><a href="./index.php">Home</a></li>
+			<li><a href="./?page=taskList">Task List</a></li>
+			<li><a href="./?page=taskList&finish=1">Completed Task</a></li>
+			<li><a href="./?page=newTask">Create New Task</a></li>
+		</ul>
+		<br/>

@@ -3,16 +3,16 @@
 */
 //Function that starts once page is rendered.
 jQuery(document).ready(function(){
-	// Variable collection
-	var id = jQuery("input[name='id']").val();
-	var description = jQuery("#description").val();
-	var commit = jQuery("#commit").val();
 	//Replace description textarea with ckeditor
 	CKEDITOR.replace("description");
 	/*
 		Adds an onclick event that resolves task.
 	*/
 	jQuery("#resolve_button").click(function(){
+		// Variable collection
+		var id = jQuery("input[name='id']").val();
+		var description = CKEDITOR.instances.description.getData();
+		var commit = jQuery("#commit").val();
 		jQuery.ajax({
 			type: "POST",
 			url: "./process/processResolveTask.php",
@@ -23,4 +23,7 @@ jQuery(document).ready(function(){
 			}
 		});
 	});
+	
+	// replaces inputbox with jQuery UI datepicker
+	jQuery("#due_date").datepicker();
 });
